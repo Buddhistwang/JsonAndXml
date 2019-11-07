@@ -1,0 +1,58 @@
+<aside id="js_mainnav_left" class="sidebar sidebar--hidden">
+    <div class="scrollbar-inner">
+        <div class="user">
+            <div class="user__info" data-toggle="dropdown">
+                <img class="user__img" src="/material/img/public/profile-pics.jpg" alt="">
+                <div>
+                    <div class="user__email">@bonree.com</div>
+                </div>
+            </div>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="/logout">退出</a>
+            </div>
+        </div>
+        <ul class="navigation">
+            <li class="navigation__sub">
+                <a href=""><i class="zmdi zmdi-file-text"></i>配置文件管理</a>
+                <ul>
+                    <li><a href="/scoring/global">global</a></li>
+                    <li><a href="/scoring/browser">browser-conf-raw</a></li>
+                    <li><a href="/scoring/mp">mp-config-raw</a></li>
+                    <li><a href="/scoring/platform">platform-storm-conf-raw</a></li>
+                    <li><a href="/scoring/sdk">sdk-config-raw</a></li>
+                    <li><a href="/scoring/server">server-config-raw</a></li>
+                    <li><a href="/scoring/sso">sso-conf-raw</a></li>
+                    <li><a href="/scoring/view">view-config-raw</a></li>
+                </ul>
+            </li>
+        </ul>
+{#        <ul class="navigation">#}
+{#            <li class="navigation__sub">#}
+{#                <a href=""><i class="zmdi zmdi-storage"></i>数据采集</a>#}
+{#                <ul>#}
+{#                    <li><a href="/waf/info">WAF</a></li>#}
+{#                    <li><a href="/firewall/info">防火墙</a></li>#}
+{#                    <li><a href="/netscler/info">NETSCLER</a></li>#}
+{#                    <li><a href="/ecs/info">ECS</a></li>#}
+{#                    <li><a href="/lsd/info">LSD</a></li>#}
+{#                    <li><a href="/nginx/info">NGINX</a></li>#}
+{#                    <li><a href="/netsegment/info">网段信息</a></li>#}
+{#                    <li><a href="/dns/info">DNS</a></li>#}
+{#                </ul>#}
+{#            </li>#}
+{#        </ul>#}
+    </div>
+</aside>
+<script>
+    $(document).ready(function () {
+        var url = window.location.pathname;
+        console.log(url)
+        var urlList = $('.navigation__sub>ul>li').find("a");
+        for (var i = 0; i < urlList.length; i++) {
+            if (url.indexOf($(urlList[i]).attr("href")) != -1) {
+                $(urlList[i]).parent().addClass("navigation__active")
+                $(urlList[i]).parent().parent().parent().addClass("navigation__sub--active")
+            }
+        }
+    })
+</script>

@@ -1,0 +1,155 @@
+/**
+ * @author linhao
+ * @date 2011-7
+ */
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, pre, code,
+form, fieldset, legend, input, button,
+textarea, p, blockquote, th, td, menu{margin:0;padding:0;}
+html{overflow-y:scroll}
+body,button,input,select,textarea{ font:12px/1.5 "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;}
+iframe{border:0;margin:0;padding:0;}
+img, fieldset{border:0;}
+cite,em,strong,th{font-style:inherit;font-weight:inherit;}
+h1, h2, h3, h4, h5, h6{font-size:100%;font-weight:normal;}
+input,button,textarea,select{*font-size:100%;}
+ol, ul, menu{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+th{text-align:left;}
+blockquote{quotes:none;}
+blockquote:before,blockquote:after,{content:'';content:none;}
+a{text-decoration:none;}
+td,th,div{word-break:break-all;word-wrap:break-word}
+pre,xmp{white-space:pre-wrap}
+form{display:inline;}
+input{vertical-align:middle;}
+em,cite,i{font-style:normal;}
+s{text-decoration:none;}
+*{outline:none}
+:focus{outline:0;}
+
+/*清除浮动*/
+.cc:after{content:'\20';display:block;height:0;clear:both;visibility:hidden;}
+.cc{*zoom:1;}
+.c{clear:both;font:0px/0px Arial;overflow:hidden;height:0;width:0;}
+
+/*通用样式*/
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+.tdu{text-decoration:underline;}
+.b{font-weight:700;}
+.w{white-space:nowrap;}
+.tal{text-align:left;}
+.tac{text-align:center;}
+.tar{text-align:right;}
+.fr{float:right;display:inline;}
+.fl{float:left;display:inline;}
+.cb{clear:both;}
+.cp{cursor:pointer;}
+.cd{cursor:default;}
+/*.yahei{font-family:\5fae\8f6f\96c5\9ed1;}*/
+.songti{font-family:\5b8b\4f53;}
+.prel{ position:relative;}
+.hide{display:none;}
+.pt5{padding-top:5px;}
+.pt10{padding-top:10px;}
+.pr5{padding-right:5px;}
+.pr10{padding-right:10px;}
+.pb5{padding-bottom:5px;}
+.pb10{padding-bottom:10px;}
+.pl5{padding-left:5px;}
+.pl10{padding-left:10px;}
+.mr5{margin-right:5px;}
+.mr10{margin-right:10px;}
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.mb5{margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+.f18{font-size:18px;}
+.f20{font-size:20px;}
+.f22{font-size:22px;}
+.f24{font-size:24px;}
+.lh1{line-height:1;}
+.lh20{line-height:20px;}
+.lh22{line-height:22px;}
+.lh32{line-height:32px;}
+.c333{color:#333;}
+.c666{color:#666;}
+.c999{color:#999;}
+.cred{color:#ee4f11;}
+.corg{color:#f89727;}
+.cblue{color:#052d4b;}
+.z9{z-index:9;}
+.z8{z-index:8;}
+.z7{z-index:7;}
+
+/*css3*/
+.brtl10-brtr10{-moz-border-radius-topleft:10px;-moz-border-radius-topright:10px;-webkit-border-top-left-radius:10px;-webkit-border-top-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;}
+.brbl10-brbr10{-moz-border-radius-bottomleft:10px;-moz-border-radius-bottomright:10px;-webkit-border-bottom-left-radius:10px;-webkit-border-bottom-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;}
+.br10{-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+.br8{-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px;}
+
+/* html5 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display: block;}
+
+/*公用控件*/
+.input-h32, .input-h32 span, .right-ico-19, .right-ico-40, .error-ico-19, .btn-org-h40, .btn-org-h40 input, .btn-green-h30, .btn-green-h30 span{ background:url(../../images/aliyun/form_ctrl.png) no-repeat 0 0;}
+.input-h32{height:32px;padding-left:9px; background-position:0 0;}
+.input-h32 span{float:left;width:100%;height:32px;color:#666;background-position:right -32px;}
+.input-h32 span input{float:left;width:95%; height:32px;line-height:32px;border:0 none; background:none;color:#666;}
+.right-ico-19{width:19px;height:19px;background-position:-261px 0;}
+.error-ico-19{width:19px;height:19px;background-position:right 0;}
+.right-ico-40{width:40px;height:40px;background-position:0 -146px;}
+.btn-org-h40{height:40px; background-position:0 -65px;padding-left:4px;box-shadow:0 1px 1px rgba(0,0,0,.2);border-radius:6px;}
+.btn-org-h40 input{width:100%;height:40px;border:0 none; background-position:right -105px;text-align:center;color:#623e08;font-size:18px;font-weight:700;cursor:pointer;}
+.btn-green-h30{height:30px; background-position:-296px -146px;padding-left:4px; }
+.btn-green-h30 span{float:left;display:inline;padding:0 5px;height:30px; line-height:30px;border:0 none;background-position:right -176px;text-align:center;color:#4c6f0d;cursor:pointer;}
+.btn-coming{width:122px;height:34px;line-height:32px; text-align:center;color:#999;font-size:14px; background:url(../../images/aliyun/bg_bus.jpg) no-repeat -110px -70px; text-decoration:none;}
+
+.btn-detail{background:url(../../images/aliyun/btn_detail.png) no-repeat 0 0;}
+.btn-detail{display:block;width:120px;height:33px;text-indent:-999em; overflow:hidden; box-shadow:0 1px 1px rgba(0,0,0,.2);border-radius:10px;}
+.btn-detail.detail-orange{ background-position:0 0;}
+.btn-detail.detail-orange:hover{ background-position:0 -34px;}
+.btn-detail.detail-green{ background-position:0 -68px;}
+.btn-detail.detail-green:hover{ background-position:0 -102px;}
+.btn-detail.detail-blue{ background-position:0 -136px;}
+.btn-detail.detail-blue:hover{ background-position:0 -170px;}
+.btn-detail.detail-coming{ background-position:0 -204px;box-shadow:none;}
+.btn-detail.btn-instal{background:url(../../images/aliyun/btn_instal.png) no-repeat 0 0;}
+.btn-detail.btn-instal:hover{background:url(../../images/aliyun/btn_instal.png) no-repeat 0 -34px;}
+.btn-s2{display:block;width:120px;height:33px;text-indent:-999em;overflow:hidden;background:url(../../images/aliyun/bg_dev.jpg) no-repeat;}
+.btn-s2.s2-join{background-position:-207px -92px;}
+.btn-s2.s2-buy{background-position:-207px -126px;}
+.dis-h30{background-position:-296px -207px; }
+.dis-h30 span{background-position:right -237px;color:#efefef;cursor:default;}
+
+.title-f12{font-size:12px;font-weight:700;color:#333;padding-left:13px;background:url(../../images/aliyun/list_style.png) no-repeat left center; }
+.title-f14{font-size:14px;font-weight:700;color:#333;padding-left:13px;background:url(../../images/aliyun/list_style.png) no-repeat left center;}
+.title-f18{font-size:18px;font-weight:700;color:#333;padding-left:13px;background:url(../../images/aliyun/list_style.png) no-repeat left center;}
+.title-f24{font-size:24px;font-weight:700;color:#333;padding-left:13px;background:url(../../images/aliyun/list_style.png) no-repeat left center;}
+
+/*公用版块
+body{ background:url(../../images/aliyun/bg.png) repeat 0 0;}*/
+
+.ay-header{width:980px;height:66px;margin:0 auto 10px auto !important;margin:0 auto 6px auto;background:url(../../images/aliyun/ay_header.png) no-repeat 0 0;}
+.ay-header-bg-wrap{height:66px;background:url(../../images/aliyun/ay_header.png) no-repeat right -66px;padding:0 14px;}
+.ay-header-main{height:66px;background:url(../../images/aliyun/ay_header.png) repeat-x right -132px;}
+.ay-header-main .logo{float:left;display:inline;margin:17px 0 0 28px}
+.ay-header-main nav{float:left;display:inline;padding:0 0 0 40px;font-weight:700;}
+.ay-header-main nav li{float:left;display:inline;height:65px;margin:0 8px;}
+.ay-header-main nav li a{float:left; display:inline; text-align:center;_min-width:70px; overflow:hidden;height:65px; line-height:66px;padding:0 12px;color:#484848; font-size: 14px;}
+.ay-header-main nav li a:hover{ background:#e7e7e7;border:solid #dadada;border-width:0 1px 0 1px;margin:0 -1px;}
+.ay-header-main nav li.current{border-bottom:4px solid #ec9025;}
+.ay-header-main .home-login{float:right; line-height:66px;color:#666; margin-right:5px;}
+.ay-header-main .home-login a{color:#666;}
+.ay-header-main .home-login a.reg-link{margin-left:15px;}
+.ay-header-main .home-login a.user-id{color:#f89727; font-weight:700;margin:0;}
+.ay-header-main .home-login a.link-login-out{margin:0 0 0 15px;}
+
+.ay-footer{width:980px;margin:30px auto 0 auto;color:#666;padding:20px 0; background:url(../../images/aliyun/home_line.png) no-repeat 50% 0;}
+.ay-footer a{color:#666;margin:0 7px;}

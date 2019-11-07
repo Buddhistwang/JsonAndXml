@@ -1,0 +1,100 @@
+.aliyun-lego-login-index-ad .hidden {
+  display: none!important;
+}
+.aliyun-lego-login-index-ad .module-wrap .wrapper {
+  float: right;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider {
+  width: 450px;
+  height: 380px;
+  position: relative;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider-wrap {
+  position: relative;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider-wrap.unslider-carousel > li {
+  float: left;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider-vertical > ul {
+  height: 100%;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider-vertical li {
+  float: none;
+  width: 100%;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider-fade {
+  position: relative;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider-fade .unslider-wrap li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 8;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider-fade .unslider-wrap li.unslider-active {
+  z-index: 10;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider li,
+.aliyun-lego-login-index-ad .module-wrap .unslider ol,
+.aliyun-lego-login-index-ad .module-wrap .unslider ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider-arrow {
+  position: absolute;
+  left: 20px;
+  z-index: 2;
+  cursor: pointer;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider-arrow.next {
+  left: auto;
+  right: 20px;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider-nav {
+  position: relative;
+  margin: 8px auto;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider-nav.outer ol li {
+  border-color: #ccc;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider-nav.inner {
+  z-index: 1000;
+  bottom: 35px;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider-nav ol {
+  list-style: none;
+  text-align: center;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider-nav ol li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  background: transparent;
+  border-radius: 11px;
+  overflow: hidden;
+  text-indent: -999em;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.aliyun-lego-login-index-ad .module-wrap .unslider-nav ol li.unslider-active {
+  background: #00a2ca;
+  border: 2px solid #00a2ca;
+  cursor: default;
+}
+.aliyun-lego-login-index-ad .module-wrap .banner {
+  height: 350px;
+}
+.aliyun-lego-login-index-ad .module-wrap .banner a {
+  display: inline-block;
+}
+.aliyun-lego-login-index-ad .module-wrap .banner li img {
+  width: 450px;
+  height: 350px;
+}

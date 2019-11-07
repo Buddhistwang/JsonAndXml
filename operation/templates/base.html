@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>平台支撑中心-配置文件管理</title>
+    <link rel="stylesheet"
+          href="/material/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+    <link rel="shortcut icon" href="/material/img/public/logo.jpg" type="image/x-icon"/>
+    <link rel="stylesheet"
+          href="/material/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+    <!-- App styles -->
+    <link rel="stylesheet" href="/material/css/app.min.css">
+
+    <script src="/material/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/material/js/app.min.js"></script>
+    <script src="/material/vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <script src="/material/js/bootstrap-treeview.js"></script>
+    <!--报表所需前端库-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+</head>
+<body data-ma-theme="blue-grey">
+<main class="main">
+    <div class="page-loader">
+        <div class="page-loader__spinner">
+            <svg viewBox="25 25 50 50">
+                <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+            </svg>
+        </div>
+    </div>
+    <div class="page-loader-op" style="display: none">
+        <div class="page-loader__spinner-op">
+            <svg viewBox="25 25 50 50">
+                <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+            </svg>
+        </div>
+    </div>
+    {% include "menu_top.html" %}
+
+    {% include "menu.html" %}
+    {% block menu %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+</main>
+</body>
+{% block footer %}
+{% endblock %}
+</html>

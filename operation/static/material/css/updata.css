@@ -1,0 +1,453 @@
+.colorfff {
+    color: #fff;
+}
+
+.mysqldata {
+    display: flex;
+    flex-direction: row;
+    border-radius: 2px;
+    height: calc(100vh - 200px);
+        width: 100%;
+}
+.mysqldata .listview__item {
+    display: flex;
+    align-items: center;
+    padding: 6px 2.1rem;
+    padding-right: 5px;
+    transition: background-color .3s;
+}
+/*.mysqldata .col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-7,.col-md-9,.col-md-10,.col-md-11,.col-md-12 {
+    padding: 0;
+}*/
+
+.mysqldata .toolbar--inner {
+    color: #464a4c;
+    background-color: #fbfbfb;
+    margin-bottom: 0px !important;
+}
+
+.mysqldata .toolbar__label {
+    margin: 0;
+    font-size: 1.1rem;
+}
+.mysqldata__sidebar {
+    width: 20rem;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+    background: #fff;
+}
+@media (max-width: 575.99px) {
+    .mysqldata__body {
+        margin-top: 0.8rem;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+        background: #fff;
+    }
+}
+
+@media (min-width: 768px) {
+    .mysqldata__sidebar {
+        border-right: 1px solid #f1f1f1;
+    }
+}
+
+@media (max-width: 991px) {
+    .mysqldata__sidebar {
+    }
+}
+
+.mysqldata__sidebar .listview {
+    height: calc(100% - 130px);
+    overflow-y: auto;
+}
+
+.mysqldata__search {
+    padding: 0 2.2rem;
+    position: relative;
+}
+
+.mysqldata__search .form-group:before {
+    font-family: "Material-Design-Iconic-Font";
+    content: "";
+    font-size: 1.3rem;
+    position: absolute;
+    left: 0;
+    bottom: 0.35rem;
+}
+
+.mysqldata__search .form-control {
+    padding-left: 2rem;
+}
+
+.mysqldata__body {
+    flex: 2;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+    background: #fff;
+}
+
+.mysqldata__header,
+.mysqldata__reply {
+    flex: 0 0 auto;
+}
+.mysqldata .toolbar {
+    height: 50px;
+}
+.mysqldata .card--fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    padding-top: 72px;
+    padding-left: 2rem;
+    padding-bottom: 20px;
+    overflow: auto;
+    /* padding: 2rem; */
+    padding-right: 2rem;
+}
+.mysqldata__content {
+    overflow-y: auto;
+    position: relative;
+    flex: 1 1 auto;
+    padding: 2.5rem;
+    padding-top: 6px;
+    padding-bottom: 0;
+}
+.mysqldata .card-block {
+    flex: 1 1 auto;
+    padding: 0rem;
+}
+.mysqldata__item {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.mysqldata__item:not(.mysqldata__item--right) {
+    flex-direction: row;
+}
+
+.mysqldata__avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.mysqldata__details {
+    padding: 0 1rem;
+    max-width: 500px;
+}
+
+.mysqldata__details > p {
+    border-radius: 0.5rem;
+    padding: 1rem 1.3rem;
+    margin-bottom: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.mysqldata__details > p + p {
+    margin-top: 2px;
+}
+
+.mysqldata__details > small {
+    display: block;
+    padding: 0 1.5rem;
+    margin-top: 1rem;
+    color: #9c9c9c;
+    font-size: 0.9rem;
+}
+
+.mysqldata__details > small > .zmdi {
+    font-size: 1.2rem;
+    vertical-align: middle;
+    margin-right: 0.3rem;
+}
+
+.mysqldata__details:not(.mysqldata__details--highlight) > p {
+    background-color: #f6f6f6;
+}
+
+.mysqldata__item--right {
+    flex-direction: row-reverse;
+}
+
+.mysqldata__item--right .mysqldata__details {
+    text-align: right;
+}
+
+.mysqldata__item--right .mysqldata__details > p {
+    background-color: #03A9F4;
+    color: #FFFFFF;
+    margin-left: auto;
+}
+
+.mysqldata__reply {
+    border-top: 1px solid #f1f1f1;
+    padding: 1rem;
+    padding-right: 3rem;
+    position: relative;
+}
+
+.mysqldata__reply__text {
+    width: 100%;
+    border: 0;
+    border-radius: 2px;
+    padding: 0.5rem;
+    resize: none;
+}
+
+.mysqldata__reply__btn {
+    position: absolute !important;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.tree_title a {
+    color: #666;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.subtitle {}
+
+.subtitle a {
+    color: #666;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0.5rem 3rem;
+}
+
+.subtitle a:hover {
+    background: #f2f2f2;
+    transparent: background-color .3s;
+}
+
+.db_list .panel {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 0px solid transparent;
+    border-radius: 0px;
+}
+
+.db_list .list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px 10px 35px;
+    margin-bottom: 0px;
+    border-top: 0px solid #dddddd;
+    border-right: 0px solid #dddddd;
+    border-left: 0px solid #dddddd;
+    border-bottom: 1px solid #e1e6eb !important;
+    background-color: #ffffff;
+}
+
+.db_list .list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.table_list {
+    border: 1px solid #e1e6eb;
+    border-radius: 0px;
+}
+
+.table_list .list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.table_list .list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px 10px 35px;
+    margin-bottom: 0px;
+    border-top: 0px solid #dddddd;
+    border-right: 0px solid #dddddd;
+    border-left: 0px solid #dddddd;
+    border-bottom: 1px solid #e1e6eb !important;
+    background-color: #ffffff;
+}
+
+.sql_text {
+    border-radius: 0px;
+    border: 1px solid #e1e6eb;
+    margin-top: 10px;
+}
+
+.sql_text .form-control {
+    border: 0px solid #cccccc;
+    border-radius: 0px;
+    margin: 0px !important;
+}
+
+.sql_table {  }
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.console-title-border {
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 20px;
+}
+
+.fixed-table-container {
+    border: 0px solid #ddd;
+}
+
+.list-group {
+    padding-left: 0;
+    margin-bottom: 0px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.list-group-item:first-child {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.panel > .list-group .list-group-item {
+    border-width: 0px 0;
+}
+
+.panel-group .panel-heading + .panel-collapse .panel-body {
+    border-top: 0px solid #dddddd;
+}
+
+.panel-body {
+    padding: 0;
+}
+
+.panel-group .panel {
+    margin-bottom: 0;
+    overflow: hidden;
+    border-radius: 0px;
+}
+
+/* mysql query*/
+#js_updatacol li {
+    padding-left: 0.8rem
+}
+
+#js_updatacol li:hover {
+    background: #F2F2F2;
+}
+
+#js_updatacol .custom-control {
+    height: 15px;
+    line-height: 15px;
+}
+
+/* header */
+
+.logo {
+    width: 160px;
+    height: 34px;
+    float: left;
+    line-height: 72px;
+    background: url(../img/public/logo.jpg);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-size: 100%;
+}
+/*table*/
+.table thead th {
+    border-bottom-width: 1px;
+    font-weight: bold;
+}
+.table-dropdown-menu {
+    line-height: 25px;
+    padding: 1rem 1rem;
+
+}
+/*loading*/
+
+.page-loader-op {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 999999999;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+
+.page-loader__spinner-op {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.page-loader__spinner-op svg {
+  animation: rotate 2s linear infinite;
+  transform-origin: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.page-loader__spinner-op svg circle {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+@keyframes color {
+  100%,
+  0% {
+    stroke: #ff5652;
+  }
+  40% {
+    stroke: #2196F3;
+  }
+  66% {
+    stroke: #32c787;
+  }
+  80%,
+  90% {
+    stroke: #ffc107;
+  }
+}
+
+.content__title {
+    margin-bottom: 2rem;
+    padding: 1rem 0rem 0;
+}
+.content__title>h1 {
+    line-height: 100%;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    margin: 0;
+    color: #676767;
+}

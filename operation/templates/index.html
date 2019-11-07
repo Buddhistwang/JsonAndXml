@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <section class="content">
+        <header class="content__title">
+            <h1>配置文件管理</h1>
+        </header>
+        <div class="row stats">
+            <div class="col-sm-6 col-md-2">
+                <a href="/scoring/global">
+                    <div class="card text-center">
+                        <img class="card-img-top rounded mx-auto d-block" style="width: 20%;padding-top: 20px"
+                             src="/material/img/public/online.png">
+                        <div class="card-header">
+                            <h2 class="card-title">global</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="/scoring/browser">
+                    <div class="card text-center">
+                        <img class="card-img-top rounded mx-auto d-block" style="width: 20%;padding-top: 20px"
+                             src="/material/img/public/online.png">
+                        <div class="card-header">
+                            <h2 class="card-title">browser-conf-raw</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="/scoring/mp">
+                    <div class="card text-center">
+                        <img class="card-img-top rounded mx-auto d-block" style="width: 20%;padding-top: 20px"
+                             src="/material/img/public/online.png">
+                        <div class="card-header">
+                            <h2 class="card-title">mp-config-raw</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="/scoring/platform">
+                    <div class="card text-center">
+                        <img class="card-img-top rounded mx-auto d-block" style="width: 20%;padding-top: 20px"
+                             src="/material/img/public/online.png">
+                        <div class="card-header">
+                            <h2 class="card-title">platform-storm-conf-raw</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="/scoring/sdk">
+                    <div class="card text-center">
+                        <img class="card-img-top rounded mx-auto d-block" style="width: 20%;padding-top: 20px"
+                             src="/material/img/public/online.png">
+                        <div class="card-header">
+                            <h2 class="card-title">sdk-config-raw</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="/scoring/server">
+                    <div class="card text-center">
+                        <img class="card-img-top rounded mx-auto d-block" style="width: 20%;padding-top: 20px"
+                             src="/material/img/public/online.png">
+                        <div class="card-header">
+                            <h2 class="card-title">server-config-raw</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="/scoring/sso">
+                    <div class="card text-center">
+                        <img class="card-img-top rounded mx-auto d-block" style="width: 20%;padding-top: 20px"
+                             src="/material/img/public/online.png">
+                        <div class="card-header">
+                            <h2 class="card-title">sso-conf-raw</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+                <a href="/scoring/view">
+                    <div class="card text-center">
+                        <img class="card-img-top rounded mx-auto d-block" style="width: 20%;padding-top: 20px"
+                             src="/material/img/public/online.png">
+                        <div class="card-header">
+                            <h2 class="card-title">view-config-raw</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br/><br/><br/>
+    </section>
+    <script>
+        $("#js_mainnav_left").removeClass("sidebar--hidden")
+
+        $(".navigation-trigger").addClass("hidden-xl-up")
+    </script>
+{% endblock %}
+{% block footer %}
+{% endblock %}

@@ -1,0 +1,68 @@
+.www-aliyun-400-help-banner-1 .module-wrap {
+  height: 90px;
+  padding: 15px 0;
+  background: #EBEBEB;
+}
+.www-aliyun-400-help-banner-1 .module-wrap .list-help {
+  min-width: 1000px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+  color: #373D41;
+  width: 100%;
+  padding: 20px 0;
+}
+.www-aliyun-400-help-banner-1 .module-wrap .list-help .left-icon {
+  float: left;
+  width: 50px;
+  height: 50px;
+  display: table;
+}
+.www-aliyun-400-help-banner-1 .module-wrap .list-help .left-icon span {
+  display: table-cell;
+  vertical-align: middle;
+}
+.www-aliyun-400-help-banner-1 .module-wrap .list-help .left-icon span img {
+  width: 100%;
+}
+.www-aliyun-400-help-banner-1 .module-wrap .list-help .right-text {
+  margin-left: 77px;
+  height: 50px;
+}
+.www-aliyun-400-help-banner-1 .module-wrap .list-help .right-text .left {
+  display: inline-block;
+  height: 50px;
+}
+.www-aliyun-400-help-banner-1 .module-wrap .list-help .right-text .left .title {
+  color: #373D41;
+  font-size: 16px;
+  line-height: 1;
+  padding-bottom: 5px;
+}
+.www-aliyun-400-help-banner-1 .module-wrap .list-help .right-text .left .desc {
+  font-size: 22px;
+  color: #373D41;
+}
+.www-aliyun-400-help-banner-1 .module-wrap .list-help .right-text .right {
+  margin-left: 90px;
+  display: inline-block;
+  padding: 13px 0;
+  height: 24px;
+}
+.www-aliyun-400-help-banner-1 .module-wrap .list-help .right-text .right .list {
+  float: left;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #373D41;
+}
+.www-aliyun-400-help-banner-1 .module-wrap .list-help .right-text .right .list:not(:last-child) {
+  border-right: 1px solid #CFD0D1;
+}
+.www-aliyun-400-help-banner-1 .module-wrap .list-help .right-text .right .list a {
+  text-decoration: none;
+  color: inherit;
+}
+.www-aliyun-400-help-banner-1 .module-wrap .list-help .right-text .right .list a:hover {
+  color: #00c1de;
+}

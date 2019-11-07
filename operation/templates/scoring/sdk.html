@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>平台支撑中心-配置文件管理</title>
+    <link rel="stylesheet"
+          href="/material/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+    <link rel="shortcut icon" href="/material/img/public/logo.jpg" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    {#  <!-- Ionicons -->Heading Of Message#}
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- /.col -->
+                    <div class="col-md-9">
+                        <div class="card card-primary card-outline">
+                            <div class="card-header">
+                                <h3 class="card-title">富文本编辑器</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="form-group">
+                    <textarea id="compose-textarea" class="form-control" style="height: 300px">
+                       {{ data }}
+
+                    </textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                    <div class="btn btn-default btn-file">
+                                        <p class="help-block">保存前请先将JSON压缩，以免出现格式问题</p>
+                                        <a href="http://www.bejson.com/" target="_Blank">JSON压缩</a>
+                                    </div>
+
+                                </div>
+                            <!-- /.card-body -->
+                            <div class="card-footer">
+                                <div class="float-right">
+                                    <button type="submit" class="btn btn-primary" id="fuwenben_submit"><i
+                                            class="far fa-envelope"></i> 保存
+                                    </button>
+                                </div>
+                                <div class="float-left">
+                                    <a href="http://www.bejson.com/xml2json/" target="_Blank">JSON 转 XML</a>
+                                </div>
+                            </div>
+                            <!-- /.card-footer -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../js/jquery-1.10.2.min.js"></script>
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- Summernote -->
+<script src="../../plugins/summernote/summernote-bs4.min.js"></script>
+<!-- Page Script -->
+<script>
+    $(function () {
+        //Add text editor
+        $('#compose-textarea').summernote();
+    });
+</script>
+
+<script>
+    $("#fuwenben_submit").click(function () {
+        var fuwenben = $("#compose-textarea").val();
+        console.log(fuwenben);
+        $.ajax({
+                url: '/api/save/sdk',
+                type: 'post',
+                dataType: 'json',
+                data: fuwenben,
+                success: function (data) {
+                    if (data.code === 200) {
+                        window.location.href = '/';
+                    }
+                }
+            }
+        )
+    })
+
+</script>
+</body>
+</html>

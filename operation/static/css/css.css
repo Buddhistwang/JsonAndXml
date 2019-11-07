@@ -1,0 +1,8 @@
+#db_list .btn{
+   margin-right:10px;
+       margin-bottom:10px;
+    width:200px;
+}
+#db_list .btn span {
+    float: right;
+}
