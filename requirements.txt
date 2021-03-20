@@ -46,7 +46,7 @@ ipython-genutils==0.2.0
 itsdangerous==0.24
 itypes==1.1.0
 javapackages==1.0.0
-Jinja2==2.10
+Jinja2==2.11.3
 jwcrypto==0.4.2
 kitchen==1.1.1
 kombu==4.6.3
