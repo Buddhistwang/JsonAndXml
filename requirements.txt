@@ -104,7 +104,7 @@ pyudev==0.15
 pyusb==1.0.0b1
 pywbem==0.7.0
 pyxattr==0.5.1
-PyYAML==3.10
+PyYAML==5.4
 pyzmq==17.0.0
 qrcode==5.0.1
 redis==3.2.1
