@@ -81,7 +81,7 @@ pyasn1-modules==0.0.8
 pycparser==2.18
 pycrypto==2.6.1
 pycurl==7.19.0
-Pygments==2.4.2
+Pygments==2.7.4
 pygobject==3.22.0
 pygpgme==0.3
 pykickstart==1.99.66.19
